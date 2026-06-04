@@ -18,6 +18,16 @@ Lospec pixel art palettes adapted for Emacs, based on modus-themes.
   (pixel-themes-load-theme 'pixel-themes-miri16))
 ```
 
+### package-vc
+```elisp
+(use-package pixel-themes
+  :vc (:url "https://github.com/lucasobx/pixel-themes"
+       :rev :newest)
+  :config
+  (pixel-themes-mode 1)
+  (pixel-themes-load-theme 'pixel-themes-miri16))
+```
+
 ## Usage
 
 `pixel-themes-mode` adds all pixel themes to the standard Modus Themes commands:
@@ -32,17 +42,23 @@ Lospec pixel art palettes adapted for Emacs, based on modus-themes.
 Each theme exposes a customization variable for palette overrides:
 
 ```elisp
-(setq pixel-themes-alia16-palette-overrides
-      '((bg-main "#0a0a0c")
-        (comment green-faint)))
+(setq pixel-themes-miri16-palette-overrides
+      '((bg-main "#0a0a0c")))
 ```
-
 
 ## Themes
 
-`pixel-themes-fallen-leaves` - [palette](https://lospec.com/palette-list/twelve-fallen-leaves)
+`pixel-themes-miri16` - [palette](https://lospec.com/palette-list/miri16)
 
-![](screenshots/fallen-leaves.png)
+![](screenshots/miri16.png)
+
+`pixel-themes-alia16` - [palette](https://lospec.com/palette-list/alia16)
+
+![](screenshots/alia16.png)
+
+`pixel-themes-psygnosia` - [palette](https://lospec.com/palette-list/psygnosia)
+
+![](screenshots/psygnosia.png)
 
 `pixel-themes-gray-weather` - [palette](https://lospec.com/palette-list/gray-weather)
 
@@ -52,17 +68,9 @@ Each theme exposes a customization variable for palette overrides:
 
 ![](screenshots/steam-lords.png)
 
-`pixel-themes-psygnosia` - [palette](https://lospec.com/palette-list/psygnosia)
+`pixel-themes-fallen-leaves` - [palette](https://lospec.com/palette-list/twelve-fallen-leaves)
 
-![](screenshots/psygnosia.png)
-
-`pixel-themes-miri16` - [palette](https://lospec.com/palette-list/miri16)
-
-![](screenshots/miri16.png)
-
-`pixel-themes-alia16` - [palette](https://lospec.com/palette-list/alia16)
-
-![](screenshots/alia16.png)
+![](screenshots/fallen-leaves.png)
 
 ## TODO
 
