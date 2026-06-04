@@ -79,4 +79,5 @@ Each theme exposes a customization variable for palette overrides:
 
 ## TODO
 
+- [X] Dark themes
 - [ ] Light themes
