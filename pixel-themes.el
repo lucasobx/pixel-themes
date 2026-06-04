@@ -26,7 +26,7 @@
 
 ;;; Code:
 
-(require-theme 'modus-themes)
+(require 'modus-themes)
 
 ;;;###autoload
 (when load-file-name
