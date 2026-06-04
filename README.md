@@ -18,19 +18,6 @@ Lospec pixel art palettes adapted for Emacs, based on modus-themes.
   (pixel-themes-load-theme 'pixel-themes-miri16))
 ```
 
-### Manual
-
-Clone the repository and add it to your load path:
-
-```elisp
-(use-package pixel-themes
-  :ensure nil
-  :load-path "~/.config/emacs/themes/pixel-themes"
-  :config
-  (pixel-themes-mode 1)
-  (pixel-themes-load-theme 'pixel-themes-miri16))
-```
-
 ## Usage
 
 `pixel-themes-mode` adds all pixel themes to the standard Modus Themes commands:
