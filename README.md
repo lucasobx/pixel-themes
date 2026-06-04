@@ -53,27 +53,27 @@ Each theme exposes a customization variable for palette overrides:
 
 ## Themes
 
-[`pixel-themes-fallen-leaves`](https://lospec.com/palette-list/twelve-fallen-leaves)
+`pixel-themes-fallen-leaves` - [palette](https://lospec.com/palette-list/twelve-fallen-leaves)
 
 ![](screenshots/fallen-leaves.png)
 
-[`pixel-themes-gray-weather`](https://lospec.com/palette-list/gray-weather)
+`pixel-themes-gray-weather` - [palette](https://lospec.com/palette-list/gray-weather)
 
 ![](screenshots/gray-weather.png)
 
-[`pixel-themes-steam-lords`](https://lospec.com/palette-list/steam-lords)
+`pixel-themes-steam-lords` - [palette](https://lospec.com/palette-list/steam-lords)
 
 ![](screenshots/steam-lords.png)
 
-[`pixel-themes-psygnosia`](https://lospec.com/palette-list/psygnosia)
+`pixel-themes-psygnosia` - [palette](https://lospec.com/palette-list/psygnosia)
 
 ![](screenshots/psygnosia.png)
 
-[`pixel-themes-miri16`](https://lospec.com/palette-list/miri16)
+`pixel-themes-miri16` - [palette](https://lospec.com/palette-list/miri16)
 
 ![](screenshots/miri16.png)
 
-[`pixel-themes-alia16`](https://lospec.com/palette-list/alia16)
+`pixel-themes-alia16` - [palette](https://lospec.com/palette-list/alia16)
 
 ![](screenshots/alia16.png)
 
