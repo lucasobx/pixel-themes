@@ -22,7 +22,7 @@
 ;; along with GNU Emacs.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
-;; Pixel art palettes from Lospec, rendered as Emacs themes.
+;; Emacs themes inspired by pixel art palettes.
 
 ;;; Code:
 
@@ -37,7 +37,7 @@
 ;;;; Group
 
 (defgroup pixel-themes ()
-  "Pixel art palettes built on top of the `modus-themes'."
+  "Pixel art palette themes built on modus-themes."
   :group 'faces
   :group 'modus-themes
   :prefix "pixel-themes-"
@@ -46,7 +46,8 @@
 ;;;; Items
 
 (defconst pixel-themes-dark-themes
-  '(pixel-themes-fallen-leaves
+  '(pixel-themes-exquisite-corpse
+    pixel-themes-fallen-leaves
     pixel-themes-gray-weather
     pixel-themes-steam-lords
     pixel-themes-psygnosia
