@@ -1,6 +1,6 @@
 # pixel-themes
 
-Lospec pixel art palettes adapted for Emacs, based on modus-themes.
+Emacs themes inspired by pixel art palettes, based on Modus themes.
 
 ## Requirements
 - Emacs 28.1+
@@ -35,6 +35,7 @@ Lospec pixel art palettes adapted for Emacs, based on modus-themes.
 - `pixel-themes-rotate` - cycle through themes
 - `pixel-themes-select` - pick a theme interactively
 - `pixel-themes-load-random-dark` - load a random dark theme
+- `pixel-themes-load-random-light` - load a random light theme
 - `pixel-themes-list-colors-current` - inspect the active theme's palette
 
 ### Palette overrides
