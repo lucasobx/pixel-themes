@@ -55,14 +55,21 @@
     pixel-themes-alia16)
   "List of dark Pixel themes.")
 
+(defconst pixel-themes-light-themes
+  '(pixel-themes-gothic-temple)
+  "List of light Pixel themes.")
+
 (defconst pixel-themes-items
-  pixel-themes-dark-themes
+  (append pixel-themes-dark-themes pixel-themes-light-themes)
   "List of all Pixel themes.")
 
 ;;;; Declaration
 
 (defconst pixel-themes-with-properties
-  '((pixel-themes-fallen-leaves
+  '((pixel-themes-exquisite-corpse
+     pixel-themes "Dark theme: faded parchment and dreamlike blues on black."
+     dark pixel-themes-exquisite-corpse-palette nil pixel-themes-exquisite-corpse-palette-overrides)
+    (pixel-themes-fallen-leaves
      pixel-themes "Dark theme: muted autumn tones."
      dark pixel-themes-fallen-leaves-palette nil pixel-themes-fallen-leaves-palette-overrides)
     (pixel-themes-gray-weather
@@ -73,13 +80,16 @@
      dark pixel-themes-steam-lords-palette nil pixel-themes-steam-lords-palette-overrides)
     (pixel-themes-psygnosia
      pixel-themes "Dark theme: copper skies over a muddy range."
-     dark pixel-themes-psygnosia-palette nil pixel-themes-psygnosia-palette-overrides)    
+     dark pixel-themes-psygnosia-palette nil pixel-themes-psygnosia-palette-overrides)
     (pixel-themes-miri16
      pixel-themes "Dark theme: indigo, olive, dusty mauve and harvest gold."
      dark pixel-themes-miri16-palette nil pixel-themes-miri16-palette-overrides)
     (pixel-themes-alia16
      pixel-themes "Dark theme: pink, indigo, warm gold and earthy greens."
-     dark pixel-themes-alia16-palette nil pixel-themes-alia16-palette-overrides))
+     dark pixel-themes-alia16-palette nil pixel-themes-alia16-palette-overrides)
+    (pixel-themes-gothic-temple
+     pixel-themes "Light theme: weathered palette of stone, ash, and faded gold"
+     light pixel-themes-gothic-temple-palette nil pixel-themes-gothic-temple-palette-overrides))
   "Properties for each Pixel theme.")
 
 (defvar pixel-themes--declared-p nil
@@ -123,6 +133,9 @@
 
 ;;;###autoload (autoload 'pixel-themes-load-random-dark "pixel-themes")
 (modus-themes-define-derivative-command pixel-themes load-random-dark)
+
+;;;###autoload (autoload 'pixel-themes-load-random-light "pixel-themes")
+(modus-themes-define-derivative-command pixel-themes load-random-light)
 
 ;;;###autoload (autoload 'pixel-themes-list-colors "pixel-themes")
 (modus-themes-define-derivative-command pixel-themes list-colors)
