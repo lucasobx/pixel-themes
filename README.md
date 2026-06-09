@@ -46,7 +46,7 @@ Each theme exposes a customization variable for palette overrides:
       '((bg-main "#0a0a0c")))
 ```
 
-## Themes
+## Dark themes
 
 `pixel-themes-miri16` - [palette](https://lospec.com/palette-list/miri16)
 
@@ -71,6 +71,16 @@ Each theme exposes a customization variable for palette overrides:
 `pixel-themes-fallen-leaves` - [palette](https://lospec.com/palette-list/twelve-fallen-leaves)
 
 ![](screenshots/fallen-leaves.png)
+
+`pixel-themes-exquisite-corpse` - [palette](lospec.com/palette-list/exquisite-corpse)
+
+![](screenshots/exquisite-corpse.png)
+
+## Light themes
+
+`pixel-themes-gothic-temple` - [palette](lospec.com/palette-list/gothic-temple)
+
+![](screenshots/gothic-temple.png)
 
 ## TODO
 
