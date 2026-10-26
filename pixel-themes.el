@@ -33,9 +33,7 @@
 
 ;;;###autoload
 (when load-file-name
-  (let ((dir (file-name-directory load-file-name)))
-    (unless (file-equal-p dir (expand-file-name "themes/" data-directory))
-      (add-to-list 'custom-theme-load-path dir))))
+  (add-to-list 'custom-theme-load-path (file-name-directory load-file-name)))
 
 ;;;; Group
 
@@ -45,26 +43,6 @@
   :group 'modus-themes
   :prefix "pixel-themes-"
   :tag "Pixel Themes")
-
-;;;; Items
-
-(defconst pixel-themes-dark-themes
-  '(pixel-themes-exquisite-corpse
-    pixel-themes-fallen-leaves
-    pixel-themes-gray-weather
-    pixel-themes-steam-lords
-    pixel-themes-psygnosia
-    pixel-themes-miri16
-    pixel-themes-alia16)
-  "List of dark Pixel themes.")
-
-(defconst pixel-themes-light-themes
-  '(pixel-themes-gothic-temple)
-  "List of light Pixel themes.")
-
-(defconst pixel-themes-items
-  (append pixel-themes-dark-themes pixel-themes-light-themes)
-  "List of all Pixel themes.")
 
 ;;;; Declaration
 
@@ -91,9 +69,14 @@
      pixel-themes "Dark theme: pink, indigo, warm gold and earthy greens."
      dark pixel-themes-alia16-palette nil pixel-themes-alia16-palette-overrides)
     (pixel-themes-gothic-temple
-     pixel-themes "Light theme: weathered palette of stone, ash, and faded gold"
+     pixel-themes "Light theme: weathered stone and faded gold of digital divinity."
      light pixel-themes-gothic-temple-palette nil pixel-themes-gothic-temple-palette-overrides))
-  "Properties for each Pixel theme.")
+  "Properties of each Pixel theme.
+Each element is the list of arguments that `modus-themes-theme' takes.")
+
+(defconst pixel-themes-items
+  (mapcar #'car pixel-themes-with-properties)
+  "List of all Pixel themes.")
 
 (defvar pixel-themes--declared-p nil
   "Non-nil if Pixel themes have been declared.")

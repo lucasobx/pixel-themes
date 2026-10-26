@@ -6,7 +6,7 @@
 
 (require 'pixel-themes)
 
-(defvar pixel-themes-psygnosia-palette
+(defconst pixel-themes-psygnosia-palette
   (modus-themes-generate-palette
    '((cursor "#516cbf")
 
@@ -129,13 +129,7 @@
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(modus-themes) Palette overrides"))
 
-(modus-themes-theme
- 'pixel-themes-psygnosia
- 'pixel-themes
- "Dark theme: copper skies over a muddy range."
- 'dark
- 'pixel-themes-psygnosia-palette
- nil
- 'pixel-themes-psygnosia-palette-overrides)
+(apply #'modus-themes-theme
+       (assq 'pixel-themes-psygnosia pixel-themes-with-properties))
 
 ;;; pixel-themes-psygnosia-theme.el ends here

@@ -6,7 +6,7 @@
 
 (require 'pixel-themes)
 
-(defvar pixel-themes-gothic-temple-palette
+(defconst pixel-themes-gothic-temple-palette
   (modus-themes-generate-palette
    '((cursor "#500d06")
 
@@ -153,13 +153,7 @@
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(modus-themes) Palette overrides"))
 
-(modus-themes-theme
- 'pixel-themes-gothic-temple
- 'pixel-themes
- "Light theme: weathered stone and faded gold of digital divinity."
- 'light
- 'pixel-themes-gothic-temple-palette
- nil
- 'pixel-themes-gothic-temple-palette-overrides)
+(apply #'modus-themes-theme
+       (assq 'pixel-themes-gothic-temple pixel-themes-with-properties))
 
 ;;; pixel-themes-gothic-temple-theme.el ends here

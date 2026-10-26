@@ -6,7 +6,7 @@
 
 (require 'pixel-themes)
 
-(defvar pixel-themes-steam-lords-palette
+(defconst pixel-themes-steam-lords-palette
   (modus-themes-generate-palette
    '((cursor "#7c94a1")
 
@@ -118,13 +118,7 @@
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(modus-themes) Palette overrides"))
 
-(modus-themes-theme
- 'pixel-themes-steam-lords
- 'pixel-themes
- "Dark theme: deep purples, cold blues and greens."
- 'dark
- 'pixel-themes-steam-lords-palette
- nil
- 'pixel-themes-steam-lords-palette-overrides)
+(apply #'modus-themes-theme
+       (assq 'pixel-themes-steam-lords pixel-themes-with-properties))
 
 ;;; pixel-themes-steam-lords-theme.el ends here

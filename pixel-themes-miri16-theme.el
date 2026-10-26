@@ -6,7 +6,7 @@
 
 (require 'pixel-themes)
 
-(defvar pixel-themes-miri16-palette
+(defconst pixel-themes-miri16-palette
   (modus-themes-generate-palette
    '((cursor "#ac82b2")
 
@@ -119,13 +119,7 @@
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(modus-themes) Palette overrides"))
 
-(modus-themes-theme
- 'pixel-themes-miri16
- 'pixel-themes
- "Dark theme: indigo, olive, dusty mauve and harvest gold."
- 'dark
- 'pixel-themes-miri16-palette
- nil
- 'pixel-themes-miri16-palette-overrides)
+(apply #'modus-themes-theme
+       (assq 'pixel-themes-miri16 pixel-themes-with-properties))
 
 ;;; pixel-themes-miri16-theme.el ends here

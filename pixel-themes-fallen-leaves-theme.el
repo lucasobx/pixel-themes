@@ -6,7 +6,7 @@
 
 (require 'pixel-themes)
 
-(defvar pixel-themes-fallen-leaves-palette
+(defconst pixel-themes-fallen-leaves-palette
   (modus-themes-generate-palette
    '((cursor "#a8a39d")
 
@@ -118,13 +118,7 @@
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(modus-themes) Palette overrides"))
 
-(modus-themes-theme
- 'pixel-themes-fallen-leaves
- 'pixel-themes
- "Dark theme: muted autumn tones."
- 'dark
- 'pixel-themes-fallen-leaves-palette
- nil
- 'pixel-themes-fallen-leaves-palette-overrides)
+(apply #'modus-themes-theme
+       (assq 'pixel-themes-fallen-leaves pixel-themes-with-properties))
 
 ;;; pixel-themes-fallen-leaves-theme.el ends here

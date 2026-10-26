@@ -6,7 +6,7 @@
 
 (require 'pixel-themes)
 
-(defvar pixel-themes-alia16-palette
+(defconst pixel-themes-alia16-palette
   (modus-themes-generate-palette
    '((cursor "#a7a8dd")
 
@@ -119,13 +119,7 @@
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(modus-themes) Palette overrides"))
 
-(modus-themes-theme
- 'pixel-themes-alia16
- 'pixel-themes
- "Dark theme: pink, indigo, warm gold and earthy greens."
- 'dark
- 'pixel-themes-alia16-palette
- nil
- 'pixel-themes-alia16-palette-overrides)
+(apply #'modus-themes-theme
+       (assq 'pixel-themes-alia16 pixel-themes-with-properties))
 
 ;;; pixel-themes-alia16-theme.el ends here

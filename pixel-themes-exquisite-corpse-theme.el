@@ -6,7 +6,7 @@
 
 (require 'pixel-themes)
 
-(defvar pixel-themes-exquisite-corpse-palette
+(defconst pixel-themes-exquisite-corpse-palette
   (modus-themes-generate-palette
    '((cursor "#74a5bc")
 
@@ -145,13 +145,7 @@
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(modus-themes) Palette overrides"))
 
-(modus-themes-theme
- 'pixel-themes-exquisite-corpse
- 'pixel-themes
- "Dark theme: faded parchment and dreamlike blues on black."
- 'dark
- 'pixel-themes-exquisite-corpse-palette
- nil
- 'pixel-themes-exquisite-corpse-palette-overrides)
+(apply #'modus-themes-theme
+       (assq 'pixel-themes-exquisite-corpse pixel-themes-with-properties))
 
 ;;; pixel-themes-exquisite-corpse-theme.el ends here

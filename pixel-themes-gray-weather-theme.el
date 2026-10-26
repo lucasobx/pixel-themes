@@ -6,7 +6,7 @@
 
 (require 'pixel-themes)
 
-(defvar pixel-themes-gray-weather-palette
+(defconst pixel-themes-gray-weather-palette
   (modus-themes-generate-palette
    '((cursor "#989ea1")
 
@@ -118,13 +118,7 @@
   :type '(repeat (list symbol (choice symbol string)))
   :link '(info-link "(modus-themes) Palette overrides"))
 
-(modus-themes-theme
- 'pixel-themes-gray-weather
- 'pixel-themes
- "Dark theme: cold and sad, with a quiet beauty."
- 'dark
- 'pixel-themes-gray-weather-palette
- nil
- 'pixel-themes-gray-weather-palette-overrides)
+(apply #'modus-themes-theme
+       (assq 'pixel-themes-gray-weather pixel-themes-with-properties))
 
 ;;; pixel-themes-gray-weather-theme.el ends here
