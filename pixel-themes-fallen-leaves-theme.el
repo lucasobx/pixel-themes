@@ -1,4 +1,4 @@
-;;; pixel-themes-fallen-leaves-theme.el --- Dark theme based on the twelve-fallen-leaves palette -*- lexical-binding: t -*-
+;;; pixel-themes-fallen-leaves-theme.el --- twelve-fallen-leaves palette -*- lexical-binding: t -*-
 
 ;; Author: Lucas Oliveira <obxlucas@gmail.com>
 ;; URL: https://github.com/lucasobx/pixel-themes

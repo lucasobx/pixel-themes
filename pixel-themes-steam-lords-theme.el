@@ -1,4 +1,4 @@
-;;; pixel-themes-steam-lords-theme.el --- Dark theme based on the steam-lords palette -*- lexical-binding: t -*-
+;;; pixel-themes-steam-lords-theme.el --- steam-lords palette -*- lexical-binding: t -*-
 
 ;; Author: Lucas Oliveira <obxlucas@gmail.com>
 ;; URL: https://github.com/lucasobx/pixel-themes

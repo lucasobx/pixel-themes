@@ -32,8 +32,7 @@ Emacs themes inspired by pixel art palettes, based on [Modus themes](https://pro
 
 - `pixel-themes-rotate` - cycle through themes
 - `pixel-themes-select` - pick a theme interactively
-- `pixel-themes-load-random-dark` - load a random dark theme
-- `pixel-themes-load-random-light` - load a random light theme
+- `pixel-themes-load-random` - load a random theme
 - `pixel-themes-list-colors-current` - inspect the active theme's palette
 
 ### Palette overrides
@@ -45,7 +44,7 @@ Each theme exposes a customization variable for palette overrides:
       '((bg-main "#0a0a0c")))
 ```
 
-## Dark themes
+## Themes
 
 `pixel-themes-miri16` - [palette](https://lospec.com/palette-list/miri16)
 
@@ -71,16 +70,7 @@ Each theme exposes a customization variable for palette overrides:
 
 ![](screenshots/fallen-leaves.png)
 
-`pixel-themes-exquisite-corpse` - [palette](https://lospec.com/palette-list/exquisite-corpse)
-
-![](screenshots/exquisite-corpse.png)
-
 `pixel-themes-dust-jacket` - [palette](https://lospec.com/palette-list/dust-jacket)
-
-## TODO
-
-- [X] Dark themes
-- [ ] Light themes
 
 ## License
 

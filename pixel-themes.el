@@ -32,29 +32,26 @@
 ;;;; Declaration
 
 (defconst pixel-themes-with-properties
-  '((pixel-themes-exquisite-corpse
-     pixel-themes "Dark theme: faded parchment and dreamlike blues on black."
-     dark pixel-themes-exquisite-corpse-palette nil pixel-themes-exquisite-corpse-palette-overrides)
-    (pixel-themes-fallen-leaves
-     pixel-themes "Dark theme: muted autumn tones."
+  '((pixel-themes-fallen-leaves
+     pixel-themes "Muted autumn tones."
      dark pixel-themes-fallen-leaves-palette nil pixel-themes-fallen-leaves-palette-overrides)
     (pixel-themes-gray-weather
-     pixel-themes "Dark theme: cold and sad, with a quiet beauty."
+     pixel-themes "Cold and sad, with a quiet beauty."
      dark pixel-themes-gray-weather-palette nil pixel-themes-gray-weather-palette-overrides)
     (pixel-themes-steam-lords
-     pixel-themes "Dark theme: deep purples, cold blues and greens."
+     pixel-themes "Deep purples, cold blues and greens."
      dark pixel-themes-steam-lords-palette nil pixel-themes-steam-lords-palette-overrides)
     (pixel-themes-psygnosia
-     pixel-themes "Dark theme: copper skies over a muddy range."
+     pixel-themes "Copper skies over a muddy range."
      dark pixel-themes-psygnosia-palette nil pixel-themes-psygnosia-palette-overrides)
     (pixel-themes-miri16
-     pixel-themes "Dark theme: indigo, olive, dusty mauve and harvest gold."
+     pixel-themes "Indigo, olive, dusty mauve and harvest gold."
      dark pixel-themes-miri16-palette nil pixel-themes-miri16-palette-overrides)
     (pixel-themes-alia16
-     pixel-themes "Dark theme: pink, indigo, warm gold and earthy greens."
+     pixel-themes "Pink, indigo, warm gold and earthy greens."
      dark pixel-themes-alia16-palette nil pixel-themes-alia16-palette-overrides)
     (pixel-themes-dust-jacket
-     pixel-themes "Dark theme: old book covers in plum, tan and sage."
+     pixel-themes "Old book covers in plum, tan and sage."
      dark pixel-themes-dust-jacket-palette nil pixel-themes-dust-jacket-palette-overrides))
   "Properties of each Pixel theme.
 Each element is the list of arguments that `modus-themes-theme' takes.")
@@ -86,10 +83,8 @@ Each element is the list of arguments that `modus-themes-theme' takes.")
 
 (cl-defmethod modus-themes-get-themes (&context (pixel-themes-mode (eql t)))
   "Return Pixel themes when `pixel-themes-mode' is enabled."
-  (if-let* ((themes (modus-themes-get-all-known-themes 'pixel-themes))
-            (sorted (modus-themes-sort themes 'light)))
-      sorted
-    pixel-themes-items))
+  (or (modus-themes-get-all-known-themes 'pixel-themes)
+      pixel-themes-items))
 
 ;;;; Commands
 
@@ -101,12 +96,6 @@ Each element is the list of arguments that `modus-themes-theme' takes.")
 
 ;;;###autoload (autoload 'pixel-themes-load-random "pixel-themes" nil t)
 (modus-themes-define-derivative-command pixel-themes load-random)
-
-;;;###autoload (autoload 'pixel-themes-load-random-dark "pixel-themes" nil t)
-(modus-themes-define-derivative-command pixel-themes load-random-dark)
-
-;;;###autoload (autoload 'pixel-themes-load-random-light "pixel-themes" nil t)
-(modus-themes-define-derivative-command pixel-themes load-random-light)
 
 ;;;###autoload (autoload 'pixel-themes-list-colors "pixel-themes" nil t)
 (modus-themes-define-derivative-command pixel-themes list-colors)

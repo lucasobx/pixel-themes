@@ -1,4 +1,4 @@
-;;; pixel-themes-dust-jacket-theme.el --- Dark theme based on the dust-jacket palette -*- lexical-binding: t -*-
+;;; pixel-themes-dust-jacket-theme.el --- dust-jacket palette -*- lexical-binding: t -*-
 
 ;; Author: Lucas Oliveira <obxlucas@gmail.com>
 ;; URL: https://github.com/lucasobx/pixel-themes

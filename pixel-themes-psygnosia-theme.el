@@ -1,4 +1,4 @@
-;;; pixel-themes-psygnosia-theme.el --- Dark theme based on the psygnosia palette -*- lexical-binding: t -*-
+;;; pixel-themes-psygnosia-theme.el --- psygnosia palette -*- lexical-binding: t -*-
 
 ;; Author: Lucas Oliveira <obxlucas@gmail.com>
 ;; URL: https://github.com/lucasobx/pixel-themes

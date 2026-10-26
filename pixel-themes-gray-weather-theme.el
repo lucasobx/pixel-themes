@@ -1,4 +1,4 @@
-;;; pixel-themes-gray-weather-theme.el --- Dark theme based on the gray-weather palette -*- lexical-binding: t -*-
+;;; pixel-themes-gray-weather-theme.el --- gray-weather palette -*- lexical-binding: t -*-
 
 ;; Author: Lucas Oliveira <obxlucas@gmail.com>
 ;; URL: https://github.com/lucasobx/pixel-themes

@@ -1,4 +1,4 @@
-;;; pixel-themes-miri16-theme.el --- Dark theme based on the miri16 palette -*- lexical-binding: t -*-
+;;; pixel-themes-miri16-theme.el --- miri16 palette -*- lexical-binding: t -*-
 
 ;; Author: Lucas Oliveira <obxlucas@gmail.com>
 ;; URL: https://github.com/lucasobx/pixel-themes
