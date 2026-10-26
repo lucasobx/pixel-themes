@@ -152,6 +152,7 @@ Each element is the list of arguments that `modus-themes-theme' takes.")
     ;; syntax
     (builtin      fg-main)
     (comment      yellow-faint)
+    (constant     magenta-faint)
     (fnname       fg-main)
     (fnname-call  fg-dim)
     (keyword      blue-cooler)
@@ -169,6 +170,17 @@ Each element is the list of arguments that `modus-themes-theme' takes.")
     (accent-1 magenta)
     (accent-2 green)
     (accent-3 red)
+
+    ;; rainbow
+    (rainbow-0 magenta)
+    (rainbow-1 blue-cooler)
+    (rainbow-2 yellow-warmer)
+    (rainbow-3 green)
+    (rainbow-4 cyan)
+    (rainbow-5 magenta-cooler)
+    (rainbow-6 red-cooler)
+    (rainbow-7 green-faint)
+    (rainbow-8 yellow)
 
     ;; dates
     (date-common           green-cooler)

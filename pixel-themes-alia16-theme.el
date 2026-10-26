@@ -98,19 +98,7 @@
    nil
 
    (append
-    '(;; theme-specific mappings
-      (constant  red-faint)
-
-      ;; rainbow
-      (rainbow-0 magenta)
-      (rainbow-1 blue-cooler)
-      (rainbow-2 yellow-warmer)
-      (rainbow-3 green)
-      (rainbow-4 cyan)
-      (rainbow-5 magenta-cooler)
-      (rainbow-6 red-cooler)
-      (rainbow-7 green-faint)
-      (rainbow-8 yellow))
+    '((constant red-faint))
     pixel-themes-palette-common)))
 
 (defcustom pixel-themes-alia16-palette-overrides nil

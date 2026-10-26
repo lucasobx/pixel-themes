@@ -99,17 +99,12 @@
 
    (append
     '(;; theme-specific mappings
-      (builtin      blue-warmer) ; blue
-      (keyword      blue-warmer) ; blue
-      (fnname       fg-main)
-      (type         green)
+      (builtin      blue-warmer)
+      (keyword      blue-warmer)
       (string       fg-dim)
-      (comment      yellow-faint)
-      (docstring    green-faint)
       (variable     fg-main)
       (constant     red-warmer)
       (preprocessor blue-cooler)
-      (rx-construct red)
       (rx-backslash red-faint)
 
       (rainbow-0 blue)

@@ -111,18 +111,14 @@
       (rx-backslash blue-cooler)
 
       (accent-0 blue)
-      (accent-1 magenta)
       (accent-2 yellow)
-      (accent-3 red)
 
       (keybind        blue)
       (fg-prompt      blue)
-      (fg-link        blue)
       (fg-link-visited magenta)
 
       (fg-prose-macro  magenta)
       (mail-subject    blue)
-      (mail-recipient  blue-warmer)
       (mail-cite-0     blue-warmer)
       (mail-cite-1     yellow)
       (mail-cite-2     magenta)
