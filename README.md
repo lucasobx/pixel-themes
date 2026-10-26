@@ -1,10 +1,10 @@
 # pixel-themes
 
-Emacs themes inspired by pixel art palettes, based on Modus themes.
+Emacs themes inspired by pixel art palettes, based on [Modus themes](https://protesilaos.com/emacs/modus-themes).
 
 ## Requirements
 - Emacs 28.1+
-- modus-themes 5.2.0+
+- modus-themes 5.3.0+
 
 ## Installation
 
@@ -18,7 +18,7 @@ Emacs themes inspired by pixel art palettes, based on Modus themes.
   (pixel-themes-load-theme 'pixel-themes-miri16))
 ```
 
-### package-vc
+### use-package with :vc
 ```elisp
 (use-package pixel-themes
   :vc (:url "https://github.com/lucasobx/pixel-themes"
@@ -29,8 +29,6 @@ Emacs themes inspired by pixel art palettes, based on Modus themes.
 ```
 
 ## Usage
-
-`pixel-themes-mode` adds all pixel themes to the standard Modus Themes commands:
 
 - `pixel-themes-rotate` - cycle through themes
 - `pixel-themes-select` - pick a theme interactively
@@ -73,13 +71,13 @@ Each theme exposes a customization variable for palette overrides:
 
 ![](screenshots/fallen-leaves.png)
 
-`pixel-themes-exquisite-corpse` - [palette](lospec.com/palette-list/exquisite-corpse)
+`pixel-themes-exquisite-corpse` - [palette](https://lospec.com/palette-list/exquisite-corpse)
 
 ![](screenshots/exquisite-corpse.png)
 
 ## Light themes
 
-`pixel-themes-gothic-temple` - [palette](lospec.com/palette-list/gothic-temple)
+`pixel-themes-gothic-temple` - [palette](https://lospec.com/palette-list/gothic-temple)
 
 ![](screenshots/gothic-temple.png)
 
@@ -87,3 +85,7 @@ Each theme exposes a customization variable for palette overrides:
 
 - [X] Dark themes
 - [ ] Light themes
+
+## License
+
+GPL-3.0-or-later.

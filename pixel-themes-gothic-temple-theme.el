@@ -1,7 +1,13 @@
-;;; pixel-themes-gothic-temple-theme.el --- gothic-temple -*- lexical-binding:t -*-
-;; ===============================================================
+;;; pixel-themes-gothic-temple-theme.el --- Light theme based on the gothic-temple palette -*- lexical-binding: t -*-
+
+;; Author: Lucas Oliveira <obxlucas@gmail.com>
+;; URL: https://github.com/lucasobx/pixel-themes
+;; Keywords: faces, theme
+;; SPDX-License-Identifier: GPL-3.0-or-later
+
 ;;; Commentary:
 ;; https://lospec.com/palette-list/gothic-temple
+
 ;;; Code:
 
 (require 'pixel-themes)

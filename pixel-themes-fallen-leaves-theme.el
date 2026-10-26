@@ -1,7 +1,13 @@
-;;; pixel-themes-fallen-leaves-theme.el --- fallen-leaves -*- lexical-binding:t -*-
-;; ===============================================================
+;;; pixel-themes-fallen-leaves-theme.el --- Dark theme based on the twelve-fallen-leaves palette -*- lexical-binding: t -*-
+
+;; Author: Lucas Oliveira <obxlucas@gmail.com>
+;; URL: https://github.com/lucasobx/pixel-themes
+;; Keywords: faces, theme
+;; SPDX-License-Identifier: GPL-3.0-or-later
+
 ;;; Commentary:
 ;; https://lospec.com/palette-list/twelve-fallen-leaves
+
 ;;; Code:
 
 (require 'pixel-themes)

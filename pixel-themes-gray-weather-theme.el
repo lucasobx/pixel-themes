@@ -1,7 +1,13 @@
-;;; pixel-themes-gray-weather-theme.el --- gray-weather -*- lexical-binding:t -*-
-;; ===============================================================
+;;; pixel-themes-gray-weather-theme.el --- Dark theme based on the gray-weather palette -*- lexical-binding: t -*-
+
+;; Author: Lucas Oliveira <obxlucas@gmail.com>
+;; URL: https://github.com/lucasobx/pixel-themes
+;; Keywords: faces, theme
+;; SPDX-License-Identifier: GPL-3.0-or-later
+
 ;;; Commentary:
 ;; https://lospec.com/palette-list/gray-weather
+
 ;;; Code:
 
 (require 'pixel-themes)

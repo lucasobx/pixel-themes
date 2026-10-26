@@ -1,7 +1,13 @@
-;;; pixel-themes-alia16-theme.el --- alia16 -*- lexical-binding:t -*-
-;; ===============================================================
+;;; pixel-themes-alia16-theme.el --- Dark theme based on the alia16 palette -*- lexical-binding: t -*-
+
+;; Author: Lucas Oliveira <obxlucas@gmail.com>
+;; URL: https://github.com/lucasobx/pixel-themes
+;; Keywords: faces, theme
+;; SPDX-License-Identifier: GPL-3.0-or-later
+
 ;;; Commentary:
 ;; https://lospec.com/palette-list/alia16
+
 ;;; Code:
 
 (require 'pixel-themes)

@@ -1,7 +1,13 @@
-;;; pixel-themes-steam-lords-theme.el --- steam-lords -*- lexical-binding:t -*-
-;; ===============================================================
+;;; pixel-themes-steam-lords-theme.el --- Dark theme based on the steam-lords palette -*- lexical-binding: t -*-
+
+;; Author: Lucas Oliveira <obxlucas@gmail.com>
+;; URL: https://github.com/lucasobx/pixel-themes
+;; Keywords: faces, theme
+;; SPDX-License-Identifier: GPL-3.0-or-later
+
 ;;; Commentary:
 ;; https://lospec.com/palette-list/steam-lords
+
 ;;; Code:
 
 (require 'pixel-themes)
