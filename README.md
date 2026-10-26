@@ -75,12 +75,6 @@ Each theme exposes a customization variable for palette overrides:
 
 ![](screenshots/exquisite-corpse.png)
 
-## Light themes
-
-`pixel-themes-gothic-temple` - [palette](https://lospec.com/palette-list/gothic-temple)
-
-![](screenshots/gothic-temple.png)
-
 ## TODO
 
 - [X] Dark themes

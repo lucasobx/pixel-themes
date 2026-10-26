@@ -52,10 +52,7 @@
      dark pixel-themes-miri16-palette nil pixel-themes-miri16-palette-overrides)
     (pixel-themes-alia16
      pixel-themes "Dark theme: pink, indigo, warm gold and earthy greens."
-     dark pixel-themes-alia16-palette nil pixel-themes-alia16-palette-overrides)
-    (pixel-themes-gothic-temple
-     pixel-themes "Light theme: weathered stone and faded gold of digital divinity."
-     light pixel-themes-gothic-temple-palette nil pixel-themes-gothic-temple-palette-overrides))
+     dark pixel-themes-alia16-palette nil pixel-themes-alia16-palette-overrides))
   "Properties of each Pixel theme.
 Each element is the list of arguments that `modus-themes-theme' takes.")
 
