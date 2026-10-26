@@ -75,6 +75,8 @@ Each theme exposes a customization variable for palette overrides:
 
 ![](screenshots/exquisite-corpse.png)
 
+`pixel-themes-dust-jacket` - [palette](https://lospec.com/palette-list/dust-jacket)
+
 ## TODO
 
 - [X] Dark themes
