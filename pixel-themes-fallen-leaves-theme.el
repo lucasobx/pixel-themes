@@ -4,7 +4,6 @@
 ;; https://lospec.com/palette-list/twelve-fallen-leaves
 ;;; Code:
 
-(require-theme 'modus-themes)
 (require 'pixel-themes)
 
 (defvar pixel-themes-fallen-leaves-palette
@@ -128,5 +127,4 @@
  nil
  'pixel-themes-fallen-leaves-palette-overrides)
 
-(provide-theme 'pixel-themes-fallen-leaves)
 ;;; pixel-themes-fallen-leaves-theme.el ends here

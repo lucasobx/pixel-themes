@@ -4,7 +4,6 @@
 ;; https://lospec.com/palette-list/exquisite-corpse
 ;;; Code:
 
-(require-theme 'modus-themes)
 (require 'pixel-themes)
 
 (defvar pixel-themes-exquisite-corpse-palette
@@ -155,5 +154,4 @@
  nil
  'pixel-themes-exquisite-corpse-palette-overrides)
 
-(provide-theme 'pixel-themes-exquisite-corpse)
 ;;; pixel-themes-exquisite-corpse-theme.el ends here

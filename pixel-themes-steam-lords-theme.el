@@ -4,7 +4,6 @@
 ;; https://lospec.com/palette-list/steam-lords
 ;;; Code:
 
-(require-theme 'modus-themes)
 (require 'pixel-themes)
 
 (defvar pixel-themes-steam-lords-palette
@@ -128,5 +127,4 @@
  nil
  'pixel-themes-steam-lords-palette-overrides)
 
-(provide-theme 'pixel-themes-steam-lords)
 ;;; pixel-themes-steam-lords-theme.el ends here

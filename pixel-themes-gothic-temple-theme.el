@@ -4,7 +4,6 @@
 ;; https://lospec.com/palette-list/gothic-temple
 ;;; Code:
 
-(require-theme 'modus-themes)
 (require 'pixel-themes)
 
 (defvar pixel-themes-gothic-temple-palette
@@ -163,5 +162,4 @@
  nil
  'pixel-themes-gothic-temple-palette-overrides)
 
-(provide-theme 'pixel-themes-gothic-temple)
 ;;; pixel-themes-gothic-temple-theme.el ends here

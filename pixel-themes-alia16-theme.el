@@ -4,7 +4,6 @@
 ;; https://lospec.com/palette-list/alia16
 ;;; Code:
 
-(require-theme 'modus-themes)
 (require 'pixel-themes)
 
 (defvar pixel-themes-alia16-palette
@@ -129,5 +128,4 @@
  nil
  'pixel-themes-alia16-palette-overrides)
 
-(provide-theme 'pixel-themes-alia16)
 ;;; pixel-themes-alia16-theme.el ends here

@@ -4,7 +4,6 @@
 ;; https://lospec.com/palette-list/miri16
 ;;; Code:
 
-(require-theme 'modus-themes)
 (require 'pixel-themes)
 
 (defvar pixel-themes-miri16-palette
@@ -129,5 +128,4 @@
  nil
  'pixel-themes-miri16-palette-overrides)
 
-(provide-theme 'pixel-themes-miri16)
 ;;; pixel-themes-miri16-theme.el ends here

@@ -4,7 +4,7 @@ Emacs themes inspired by pixel art palettes, based on Modus themes.
 
 ## Requirements
 - Emacs 28.1+
-- modus-themes 5.0.0+
+- modus-themes 5.2.0+
 
 ## Installation
 

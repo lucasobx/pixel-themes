@@ -4,7 +4,6 @@
 ;; https://lospec.com/palette-list/psygnosia
 ;;; Code:
 
-(require-theme 'modus-themes)
 (require 'pixel-themes)
 
 (defvar pixel-themes-psygnosia-palette
@@ -139,5 +138,4 @@
  nil
  'pixel-themes-psygnosia-palette-overrides)
 
-(provide-theme 'pixel-themes-psygnosia)
 ;;; pixel-themes-psygnosia-theme.el ends here

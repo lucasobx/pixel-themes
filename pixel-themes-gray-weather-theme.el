@@ -4,7 +4,6 @@
 ;; https://lospec.com/palette-list/gray-weather
 ;;; Code:
 
-(require-theme 'modus-themes)
 (require 'pixel-themes)
 
 (defvar pixel-themes-gray-weather-palette
@@ -128,5 +127,4 @@
  nil
  'pixel-themes-gray-weather-palette-overrides)
 
-(provide-theme 'pixel-themes-gray-weather)
 ;;; pixel-themes-gray-weather-theme.el ends here

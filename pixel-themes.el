@@ -3,7 +3,7 @@
 ;; Copyright (C) 2026 Free Software Foundation, Inc.
 ;; Author: Lucas
 ;; URL: https://github.com/lucasobx/pixel-themes
-;; Package-Requires: ((emacs "28.1") (modus-themes "5.0.0"))
+;; Package-Requires: ((emacs "28.1") (modus-themes "5.2.0"))
 ;; Keywords: faces, theme
 
 ;; This file is NOT part of GNU Emacs.
@@ -26,7 +26,10 @@
 
 ;;; Code:
 
-(require 'modus-themes)
+;; The Modus themes that come with Emacs are not in `load-path'.
+(eval-and-compile
+  (unless (require 'modus-themes nil t)
+    (require-theme 'modus-themes)))
 
 ;;;###autoload
 (when load-file-name
@@ -122,25 +125,25 @@
 
 ;;;; Commands
 
-;;;###autoload (autoload 'pixel-themes-select "pixel-themes")
+;;;###autoload (autoload 'pixel-themes-select "pixel-themes" nil t)
 (modus-themes-define-derivative-command pixel-themes select)
 
-;;;###autoload (autoload 'pixel-themes-rotate "pixel-themes")
+;;;###autoload (autoload 'pixel-themes-rotate "pixel-themes" nil t)
 (modus-themes-define-derivative-command pixel-themes rotate)
 
-;;;###autoload (autoload 'pixel-themes-load-random "pixel-themes")
+;;;###autoload (autoload 'pixel-themes-load-random "pixel-themes" nil t)
 (modus-themes-define-derivative-command pixel-themes load-random)
 
-;;;###autoload (autoload 'pixel-themes-load-random-dark "pixel-themes")
+;;;###autoload (autoload 'pixel-themes-load-random-dark "pixel-themes" nil t)
 (modus-themes-define-derivative-command pixel-themes load-random-dark)
 
-;;;###autoload (autoload 'pixel-themes-load-random-light "pixel-themes")
+;;;###autoload (autoload 'pixel-themes-load-random-light "pixel-themes" nil t)
 (modus-themes-define-derivative-command pixel-themes load-random-light)
 
-;;;###autoload (autoload 'pixel-themes-list-colors "pixel-themes")
+;;;###autoload (autoload 'pixel-themes-list-colors "pixel-themes" nil t)
 (modus-themes-define-derivative-command pixel-themes list-colors)
 
-;;;###autoload (autoload 'pixel-themes-list-colors-current "pixel-themes")
+;;;###autoload (autoload 'pixel-themes-list-colors-current "pixel-themes" nil t)
 (modus-themes-define-derivative-command pixel-themes list-colors-current)
 
 (defalias 'pixel-themes-load-theme #'modus-themes-load-theme)
