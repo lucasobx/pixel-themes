@@ -231,10 +231,10 @@ Each element is the list of arguments that `modus-themes-theme' takes.")
     (underline-link-visited  border)
     (underline-link-symbolic border)
 
-    (border-mode-line-active   border)
+    (border-mode-line-active   bg-mode-line-active)
     (bg-mode-line-inactive     bg-alt)
     (fg-mode-line-inactive     fg-dim)
-    (border-mode-line-inactive border)
+    (border-mode-line-inactive bg-mode-line-inactive)
 
     (bg-line-number-active   unspecified)
     (fg-line-number-active   accent-0)
